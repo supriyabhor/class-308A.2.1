@@ -1,4 +1,4 @@
-
+// ---------Part 1 Humble Beginnings--------------------
 const adventurer = 
 {
     name : "Robin",
@@ -48,4 +48,16 @@ console.log(adventurer.companion.name);
 console.log(adventurer.companion.companion.belongings);
 
 adventurer.roll();
-adventurer.roll(2);
+
+//--------------------part 2 Class Fantasy------------------
+
+//create class and adding data
+class Charater
+{
+    constructor (name) {
+        this.name = name;
+        this.health = 100;
+        this.inventory = [];
+      }
+}
+
