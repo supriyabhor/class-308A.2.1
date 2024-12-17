@@ -7,9 +7,18 @@ const adventurer =
  
     companion: {
              name: "Leo",
-             type: "cat"
-             }
+             type: "cat",
+             
+
+    companion: {
+             name:"Frank",
+             type:"Flea",
+             belongings: ["small hat", "sunglasses"]
+
+            }       
+        }
 }
+
 
 //From the adventurer object, we can access Robin’s inventory using a combination of dot notation and square bracket syntax.
 //  For example, we could find a sword at adventurer.inventory[0].
@@ -23,4 +32,11 @@ for (let i=0; i< adventurer.inventory.length; i++)
 // Let’s give Robin a companion to travel with –
 //  a furry friend they call “Leo.”
 
+console.log(adventurer.companion.name);
 
+//Add a “companion” sub-object to “Leo” with the following properties:
+// The companion’s name is “Frank.”
+// The companion’s type is “Flea.”
+// The companion has its own belongings, which includes a small hat and sunglasses.
+
+console.log(adventurer.companion.companion.belongings);
