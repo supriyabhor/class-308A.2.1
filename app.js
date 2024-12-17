@@ -16,8 +16,14 @@ const adventurer =
              belongings: ["small hat", "sunglasses"]
 
             }       
-        }
+        },
+        roll (mod = 0)
+         {
+            const result = Math.floor(Math.random() * 20) + 1 + mod;
+            console.log(`${this.name} rolled a ${result}.`);
+            }
 }
+
 
 
 //From the adventurer object, we can access Robin’s inventory using a combination of dot notation and square bracket syntax.
@@ -40,3 +46,6 @@ console.log(adventurer.companion.name);
 // The companion has its own belongings, which includes a small hat and sunglasses.
 
 console.log(adventurer.companion.companion.belongings);
+
+adventurer.roll();
+adventurer.roll(2);
